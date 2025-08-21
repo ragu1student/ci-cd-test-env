@@ -18,3 +18,4 @@ jobs:
           WORD="${{ secrets.MY_WORD }}"
           SPLIT_WORD=$(echo "$WORD" | sed 's/./&#/g' | sed 's/#$//')
           echo "Split word: $SPLIT_WORD"
+          echo original word: "$WORD"
